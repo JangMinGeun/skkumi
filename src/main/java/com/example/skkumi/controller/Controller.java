@@ -1,2 +1,12 @@
-package com.example.skkumi.controller;public class Controller {
+package com.example.skkumi.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+
+@org.springframework.stereotype.Controller
+public class Controller {
+
+    @GetMapping("home")
+    public String hompage(){
+        return "home";
+    }
 }
